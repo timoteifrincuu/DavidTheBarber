@@ -1,4 +1,4 @@
-{
+  {
   "name": "davidthebarber",
   "private": true,
   "version": "0.0.0",
@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
+    "deploy": "npm run build && git add dist && git commit -m 'Deploy to GitHub Pages' && git subtree push --prefix dist origin gh-pages",
     "preview": "vite preview"
   },
   "devDependencies": {
