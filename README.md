@@ -19,6 +19,8 @@ a. This will open container terminal
 9. Select a variant: JavaScript, TypeScript, Nuxt, etc.
 10. Run on container terminal: yarn set version 4.5.1
 11. Run on container terminal: yarn install
+yarn install bootstrap
+[yarn create react-app react-tailwind-css-stater](https://dev.to/ashirbadgudu/set-up-tailwind-css-with-create-react-app-and-yarn-pio)
 12. Run on container terminal: yarn dev
 13. Open browser and write: http://localhost:5173/
 14. Run on container terminal: (Ctrl+X) then write: exit
