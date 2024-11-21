@@ -4,16 +4,16 @@ export default defineConfig({
     build: {
         rollupOptions: {
             input: [
-                "/index.html",
-                "/appointment.html",
-                "/about.html",
-                "/account.html",
-                "/services.html",
-                "/log.html",
-                "/sign.html",
-                "/gallery.html",
-                "/reviews.html",
-                "/contact.html",
+                "./index.html",
+                "./appointment.html",
+                "./about.html",
+                "./account.html",
+                "./services.html",
+                "./log.html",
+                "./sign.html",
+                "./gallery.html",
+                "./reviews.html",
+                "./contact.html",
             ]
         }
     }
