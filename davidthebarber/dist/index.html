@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="logoBarber.svg" type="image/x-icon">
+  <link rel="icon" href="./assets/logoBarber-kgDG-htN.svg" type="image/x-icon">
   <title>DavidTheBarber</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,7 +22,7 @@
     
     <div>
       <button class="rounded-lg bg-orange-200 hover:bg-orange-100" onclick="window.location.href='index.html'">
-        <img src="logoBarberWhite.svg" alt="Logo" class="h-16"> 
+        <img src="./assets/logoBarberWhite-Ddx1fDX6.svg" alt="Logo" class="h-16"> 
       </button>
     </div>
 
@@ -109,39 +109,16 @@
   </div>
 
   <!-- MAIN -->
-  <main class="flex items-center justify-center min-h-screen bg-orange-200">
-    <div class="flex flex-col items-center space-y-6 p-6 bg-white shadow-lg rounded-lg">
-      <h1 class="text-2xl font-bold text-orange-950">Programează-te</h1>
-  
-      <!-- Selectarea unei date -->
-      <div class="flex flex-col items-start space-y-2">
-        <label for="date" class="text-sm font-medium text-gray-700">Selectează o dată:</label>
-        <input
-          id="date"
-          type="date"
-          class="border rounded-lg px-4 py-2 w-full focus:ring focus:ring-orange-300"
-        />
-      </div>
-  
-      <!-- Selectarea unei ore -->
-      <div class="flex flex-col items-start space-y-2">
-        <label for="time" class="text-sm font-medium text-gray-700">Selectează o oră:</label>
-        <input
-          id="time"
-          type="time"
-          class="border rounded-lg px-4 py-2 w-full focus:ring focus:ring-orange-300"
-        />
-      </div>
-  
-      <!-- Butonul de confirmare -->
-      <button
-        class="rounded-lg bg-orange-950 hover:bg-orange-800 text-orange-200 py-2 px-4 w-full font-semibold">
-        Confirmă Programarea
-      </button>
+  <main class="flex-grow flex flex-col items-center justify-center min-h-screen space-y-8 bg-orange-200">
+    <div class="text-center">
+      <img src="./assets/logoBarber-kgDG-htN.svg" alt="Logo" class="w-80 sm:w-80 md:w-96 xl:w-[30rem]">
     </div>
+    <p class="text-2xl font-bold text-orange-950">DavidTheBarber</p>
+    <button class="bg-orange-950 text-orange-200 py-3 px-12 rounded-lg shadow-lg hover:bg-orange-800 transition-all"
+      onclick="window.location.href='appointment.html'">
+      Programează-te
+    </button>
   </main>
-  
-  
 
   <!-- FOOTER -->
   <footer class="bg-orange-950 text-orange-200 py-8">
@@ -176,12 +153,16 @@
 
 <script>  
   // SCRIPT FOR SIDEBAR
+
+  // Get menu and buttons
   const menuButton = document.getElementById('menuButton');
   const sideMenu = document.getElementById('sideMenu');
   const closeButton = document.getElementById('closeButton');
+  // Toggle menu on button click
   menuButton.addEventListener('click', () => {
     sideMenu.classList.toggle('translate-x-full');
   });
+  // Close menu on close button click
   closeButton.addEventListener('click', () => {
     sideMenu.classList.add('translate-x-full');
   });

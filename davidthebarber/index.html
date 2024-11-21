@@ -19,22 +19,19 @@
 
   <!-- HEADER -->
   <header class="flex justify-between items-center bg-orange-950 p-4 shadow-lg">
+    
     <div>
       <button class="rounded-lg bg-orange-200 hover:bg-orange-100" onclick="window.location.href='index.html'">
         <img src="logoBarberWhite.svg" alt="Logo" class="h-16"> 
       </button>
     </div>
 
-    <!-- Right Button Section -->
-    <div class="flex ml-auto items-center">
-      <!-- Menu Button -->
+    <div>
       <button id="menuButton" class="flex p-2 rounded-lg bg-orange-200 xl:hidden border-0">
         <i class="bi bi-menu-button-wide text-orange-950" style="font-size: 2rem;"></i>
       </button>
 
-      <!-- Navigation Buttons (Hidden on small screens, visible on md and larger) -->
       <div class="hidden xl:flex space-x-4">
-        <!-- Services Button with Dropdown -->
         <div>
           <button class="bg-orange-200 hover:bg-orange-100 text-orange-950 py-2 px-4 rounded-lg"
             onclick="window.location.href='services.html'">
@@ -42,7 +39,6 @@
           </button>
         </div>
 
-        <!-- About Us Button with Dropdown -->
         <div class="relative group">
           <button class="bg-orange-200 hover:bg-orange-100 text-orange-950 py-2 px-4 rounded-lg"
             onclick="window.location.href='about.html'">
@@ -55,7 +51,6 @@
           </div>
         </div>
 
-        <!-- Account Button -->
         <div class="relative group">
           <button class="bg-orange-200 hover:bg-orange-100 text-orange-950 py-2 px-4 rounded-lg"
             onclick="window.location.href='account.html'">
@@ -70,7 +65,7 @@
     </div>
   </header>
 
-  <!-- SIDEMENU -->
+  <!-- SIDEBAR -->
   <div id="sideMenu"
     class="fixed top-0 right-0 w-64 h-full bg-orange-950 transform translate-x-full transition-transform duration-300 shadow-lg xl:hidden">
 
@@ -86,37 +81,31 @@
         <i class="bi bi-scissors"></i>
         Services
       </a>
-      <a href="about.html#" class="block py-2 text-orange-200 hover:bg-orange-800 rounded-lg font-bold">
+      <a href="about.html" class="block py-2 text-orange-200 hover:bg-orange-800 rounded-lg font-bold">
         <i class="bi bi-ticket-detailed-fill"></i>
         About Us
       </a>
       <a href="gallery.html" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg">
         Gallery
       </a>
-      <a href="#" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg"
-        onclick="window.location.href='reviews.html'">
+      <a href="reviews.html" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg">
         Reviews
       </a>
-      <a href="#" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg"
-        onclick="window.location.href='contact.html'">
+      <a href="contact.html" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg">
         Contact Us
       </a>
 
-      <a href="#" class="block py-2 text-orange-200 hover:bg-orange-800 rounded-lg font-bold"
-        onclick="window.location.href='account.html'">
+      <a href="account.html" class="block py-2 text-orange-200 hover:bg-orange-800 rounded-lg font-bold">
         <i class="bi bi-person-circle"></i>
         Account Details
       </a>
-      <a href="#" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg"
-        onclick="window.location.href='log.html'">
+      <a href="log.html" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg">
         Log In
       </a>
-      <a href="#" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg"
-        onclick="window.location.href='sign.html'">
+      <a href="sign.html" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg">
         Sign Up
       </a>
     </nav>
-
   </div>
 
   <!-- MAIN -->
@@ -160,21 +149,23 @@
       </div>
     </div>
   </footer>
-
-  <!-- SCRIPT FOR SIDEMENU -->
-  <script>
-    // Get menu and buttons
-    const menuButton = document.getElementById('menuButton');
-    const sideMenu = document.getElementById('sideMenu');
-    const closeButton = document.getElementById('closeButton');
-    // Toggle menu on button click
-    menuButton.addEventListener('click', () => {
-      sideMenu.classList.toggle('translate-x-full');
-    });
-    // Close menu on close button click
-    closeButton.addEventListener('click', () => {
-      sideMenu.classList.add('translate-x-full');
-    });
-  </script>
 </body>
+
+<script>  
+  // SCRIPT FOR SIDEBAR
+
+  // Get menu and buttons
+  const menuButton = document.getElementById('menuButton');
+  const sideMenu = document.getElementById('sideMenu');
+  const closeButton = document.getElementById('closeButton');
+  // Toggle menu on button click
+  menuButton.addEventListener('click', () => {
+    sideMenu.classList.toggle('translate-x-full');
+  });
+  // Close menu on close button click
+  closeButton.addEventListener('click', () => {
+    sideMenu.classList.add('translate-x-full');
+  });
+</script>
+
 </html>
