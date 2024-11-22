@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/logoBarber-kgDG-htN.svg" type="image/x-icon">
+  <title>DavidTheBarber</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-..." crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-..."
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-orange-200 font-sans text-orange-950 min-h-screen flex flex-col">
+
+  <!-- HEADER -->
+  <header class="flex justify-between items-center bg-orange-950 p-4 shadow-lg">
+    
+    <div>
+      <button class="rounded-lg bg-orange-200 hover:bg-orange-100" onclick="window.location.href='index.html'">
+        <img src="./assets/logoBarberWhite-cl0F1-cl.svg" alt="Logo" class="h-16"> 
+      </button>
+    </div>
+
+    <div>
+      <button id="menuButton" class="flex p-2 rounded-lg bg-orange-200 xl:hidden border-0">
+        <i class="bi bi-menu-button-wide text-orange-950" style="font-size: 2rem;"></i>
+      </button>
+
+      <div class="hidden xl:flex space-x-4">
+        <div>
+          <button class="bg-orange-200 hover:bg-orange-100 text-orange-950 py-2 px-4 rounded-lg"
+            onclick="window.location.href='services.html'">
+            <i class="bi bi-scissors"></i> Services
+          </button>
+        </div>
+
+        <div class="relative group">
+          <button class="bg-orange-200 hover:bg-orange-100 text-orange-950 py-2 px-4 rounded-lg"
+            onclick="window.location.href='about.html'">
+            <i class="bi bi-ticket-detailed-fill"></i> About Us
+          </button>
+          <div class="absolute hidden group-hover:block bg-orange-200 text-orange-950 rounded-lg shadow-lg">
+            <a href="gallery.html" class="block px-4 py-2 rounded-lg hover:bg-orange-100">Gallery</a>
+            <a href="reviews.html" class="block px-4 py-2 rounded-lg hover:bg-orange-100">Reviews</a>
+            <a href="contact.html" class="block px-4 py-2 rounded-lg hover:bg-orange-100">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <button class="bg-orange-200 hover:bg-orange-100 text-orange-950 py-2 px-4 rounded-lg"
+            onclick="window.location.href='account.html'">
+            <i class="bi bi-person-circle"></i> Account
+          </button>
+          <div class="absolute hidden group-hover:block bg-orange-200 text-orange-950 rounded-lg shadow-lg">
+            <a href="log.html" class="block px-4 py-2 rounded-lg hover:bg-orange-100">Log In</a>
+            <a href="sign.html" class="block px-4 py-2 rounded-lg hover:bg-orange-100">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SIDEBAR -->
+  <div id="sideMenu"
+    class="fixed top-0 right-0 w-64 h-full bg-orange-950 transform translate-x-full transition-transform duration-300 shadow-lg xl:hidden">
+
+    <div class="flex justify-between items-center p-4 bg-orange-200">
+      <h2 class="text-orange-950 font-bold">Menu</h2>
+      <button id="closeButton" class="text-orange-950 hover:text-orange-100">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <nav class="p-4">
+      <a href="services.html" class="block py-2 text-orange-200 hover:bg-orange-800 rounded-lg font-bold">
+        <i class="bi bi-scissors"></i>
+        Services
+      </a>
+      <a href="about.html" class="block py-2 text-orange-200 hover:bg-orange-800 rounded-lg font-bold">
+        <i class="bi bi-ticket-detailed-fill"></i>
+        About Us
+      </a>
+      <a href="gallery.html" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg">
+        Gallery
+      </a>
+      <a href="reviews.html" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg">
+        Reviews
+      </a>
+      <a href="contact.html" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg">
+        Contact Us
+      </a>
+
+      <a href="account.html" class="block py-2 text-orange-200 hover:bg-orange-800 rounded-lg font-bold">
+        <i class="bi bi-person-circle"></i>
+        Account Details
+      </a>
+      <a href="log.html" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg">
+        Log In
+      </a>
+      <a href="sign.html" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg">
+        Sign Up
+      </a>
+    </nav>
+  </div>
+
+  <!-- MAIN -->
+  <main class="flex-grow flex flex-col items-center justify-center min-h-screen space-y-8 bg-orange-200">
+    <h1 class="text-4xl font-bold">Gallery</h1>
+    <div class="container mx-auto px-4">
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-xl-3">
+          <img src="./assets/g1-CqPEDPOT.png" alt="Image 1" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <img src="./assets/g2-B_TMeeF8.png" alt="Image 2" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <img src="./assets/g3-CtgIxec0.png" alt="Image 3" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+        <div class="col-12 col-md-6 col-xl-3">
+          <img src="./assets/g4-lvLBzOys.png" alt="Image 4" class="w-full h-auto rounded-lg shadow-lg">
+        </div>
+      </div>
+    </div>
+  </main>
+  
+
+  <!-- FOOTER -->
+  <footer class="bg-orange-950 text-orange-200 py-8">
+    <div class="container mx-auto text-center space-y-6">
+      <div>
+        <h4 class="text-lg font-bold text-orange-200">DavidTheBarber</h4>
+        <p class="text-sm">Tunde-te cu stil, pentru un look impecabil!</p>
+      </div>
+
+      <div class="flex justify-center space-x-6">
+        <a href="#" class="hover:text-orange-100">
+          <i class="bi bi-facebook text-3xl"></i>
+        </a>
+        <a href="#" class="hover:text-orange-100">
+          <i class="bi bi-instagram text-3xl"></i>
+        </a>
+        <a href="#" class="hover:text-orange-100">
+          <i class="bi bi-twitter text-3xl"></i>
+        </a>
+      </div>
+
+      <div class="text-sm">
+        <p>&copy; 2024 DavidTheBarber. Toate drepturile rezervate.</p>
+        <p>
+          <a href="#" class="hover:underline">Politica de confidențialitate</a> |
+          <a href="#" class="hover:underline">Termeni și condiții</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script>  
+  // SCRIPT FOR SIDEBAR
+
+  // Get menu and buttons
+  const menuButton = document.getElementById('menuButton');
+  const sideMenu = document.getElementById('sideMenu');
+  const closeButton = document.getElementById('closeButton');
+  // Toggle menu on button click
+  menuButton.addEventListener('click', () => {
+    sideMenu.classList.toggle('translate-x-full');
+  });
+  // Close menu on close button click
+  closeButton.addEventListener('click', () => {
+    sideMenu.classList.add('translate-x-full');
+  });
+</script>
+
+</html>
