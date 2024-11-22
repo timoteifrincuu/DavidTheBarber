@@ -115,11 +115,11 @@
         <form action="#" method="POST" class="space-y-4">
             <div>
                 <label for="name" class="block font-bold">Nume</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" class="w-full p-2 rounded-lg border border-orange-200">
+                <input type="text" id="name" name="name" placeholder="Minune Adrian" class="w-full p-2 rounded-lg border border-orange-200">
             </div>
             <div>
                 <label for="email" class="block font-bold">Email</label>
-                <input type="email" id="email" name="email" placeholder="john.doe@example.com" class="w-full p-2 rounded-lg border border-orange-200">
+                <input type="email" id="email" name="email" placeholder="adrian.minune@gmail.com" class="w-full p-2 rounded-lg border border-orange-200">
             </div>
             <div>
                 <label for="password" class="block font-bold">Parola</label>
@@ -186,16 +186,12 @@
 
 <script>  
   // SCRIPT FOR SIDEBAR
-
-  // Get menu and buttons
   const menuButton = document.getElementById('menuButton');
   const sideMenu = document.getElementById('sideMenu');
   const closeButton = document.getElementById('closeButton');
-  // Toggle menu on button click
   menuButton.addEventListener('click', () => {
     sideMenu.classList.toggle('translate-x-full');
   });
-  // Close menu on close button click
   closeButton.addEventListener('click', () => {
     sideMenu.classList.add('translate-x-full');
   });

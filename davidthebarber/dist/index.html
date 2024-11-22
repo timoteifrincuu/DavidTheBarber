@@ -157,15 +157,12 @@
 <script>  
   // SCRIPT FOR SIDEBAR
 
-  // Get menu and buttons
   const menuButton = document.getElementById('menuButton');
   const sideMenu = document.getElementById('sideMenu');
   const closeButton = document.getElementById('closeButton');
-  // Toggle menu on button click
   menuButton.addEventListener('click', () => {
     sideMenu.classList.toggle('translate-x-full');
   });
-  // Close menu on close button click
   closeButton.addEventListener('click', () => {
     sideMenu.classList.add('translate-x-full');
   });

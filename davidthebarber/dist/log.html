@@ -24,161 +24,95 @@
     ></script>
   </head>
 
-  <body
-    class="bg-orange-200 font-sans text-orange-950 min-h-screen flex flex-col"
-  >
+  <body class="bg-orange-200 font-sans text-orange-950 min-h-screen flex flex-col">
+
     <!-- HEADER -->
-    <header
-      class="flex justify-between items-center bg-orange-950 p-4 shadow-lg"
-    >
+    <header class="flex justify-between items-center bg-orange-950 p-4 shadow-lg">
+      
       <div>
-        <button
-          class="rounded-lg bg-orange-200 hover:bg-orange-100"
-          onclick="window.location.href='index.html'"
-        >
-          <img src="./assets/logoBarberWhite-cl0F1-cl.svg" alt="Logo" class="h-16" />
+        <button class="rounded-lg bg-orange-200 hover:bg-orange-100" onclick="window.location.href='index.html'">
+          <img src="./assets/logoBarberWhite-cl0F1-cl.svg" alt="Logo" class="h-16"> 
         </button>
       </div>
-
+  
       <div>
-        <button
-          id="menuButton"
-          class="flex p-2 rounded-lg bg-orange-200 xl:hidden border-0"
-        >
-          <i
-            class="bi bi-menu-button-wide text-orange-950"
-            style="font-size: 2rem"
-          ></i>
+        <button id="menuButton" class="flex p-2 rounded-lg bg-orange-200 xl:hidden border-0">
+          <i class="bi bi-menu-button-wide text-orange-950" style="font-size: 2rem;"></i>
         </button>
-
+  
         <div class="hidden xl:flex space-x-4">
           <div>
-            <button
-              class="bg-orange-200 hover:bg-orange-100 text-orange-950 py-2 px-4 rounded-lg"
-              onclick="window.location.href='services.html'"
-            >
-              <i class="bi bi-scissors"></i> Services
+            <button class="bg-orange-200 hover:bg-orange-100 text-orange-950 py-2 px-4 rounded-lg"
+              onclick="window.location.href='services.html'">
+              <i class="bi bi-scissors"></i> Servicii
             </button>
           </div>
-
+  
           <div class="relative group">
-            <button
-              class="bg-orange-200 hover:bg-orange-100 text-orange-950 py-2 px-4 rounded-lg"
-              onclick="window.location.href='about.html'"
-            >
-              <i class="bi bi-ticket-detailed-fill"></i> About Us
+            <button class="bg-orange-200 hover:bg-orange-100 text-orange-950 py-2 px-4 rounded-lg"
+              onclick="window.location.href='about.html'">
+              <i class="bi bi-ticket-detailed-fill"></i> Despre noi
             </button>
-            <div
-              class="absolute hidden group-hover:block bg-orange-200 text-orange-950 rounded-lg shadow-lg"
-            >
-              <a
-                href="gallery.html"
-                class="block px-4 py-2 rounded-lg hover:bg-orange-100"
-                >Gallery</a
-              >
-              <a
-                href="reviews.html"
-                class="block px-4 py-2 rounded-lg hover:bg-orange-100"
-                >Reviews</a
-              >
-              <a
-                href="contact.html"
-                class="block px-4 py-2 rounded-lg hover:bg-orange-100"
-                >Contact Us</a
-              >
+            <div class="absolute hidden group-hover:block bg-orange-200 text-orange-950 rounded-lg shadow-lg">
+              <a href="gallery.html" class="block px-4 py-2 rounded-lg hover:bg-orange-100">Galerie</a>
+              <a href="reviews.html" class="block px-4 py-2 rounded-lg hover:bg-orange-100">Recenzii</a>
+              <a href="contact.html" class="block px-4 py-2 rounded-lg hover:bg-orange-100">Contacteaza-ne</a>
             </div>
           </div>
-
+  
           <div class="relative group">
-            <button
-              class="bg-orange-200 hover:bg-orange-100 text-orange-950 py-2 px-4 rounded-lg"
-              onclick="window.location.href='account.html'"
-            >
-              <i class="bi bi-person-circle"></i> Account
+            <button class="bg-orange-200 hover:bg-orange-100 text-orange-950 py-2 px-4 rounded-lg"
+              onclick="window.location.href='account.html'">
+              <i class="bi bi-person-circle"></i> Detalii cont
             </button>
-            <div
-              class="absolute hidden group-hover:block bg-orange-200 text-orange-950 rounded-lg shadow-lg"
-            >
-              <a
-                href="log.html"
-                class="block px-4 py-2 rounded-lg hover:bg-orange-100"
-                >Log In</a
-              >
-              <a
-                href="sign.html"
-                class="block px-4 py-2 rounded-lg hover:bg-orange-100"
-                >Sign Up</a
-              >
+            <div class="absolute hidden group-hover:block bg-orange-200 text-orange-950 rounded-lg shadow-lg">
+              <a href="log.html" class="block px-4 py-2 rounded-lg hover:bg-orange-100">Conecteaza-te</a>
+              <a href="sign.html" class="block px-4 py-2 rounded-lg hover:bg-orange-100">Inscrie-te</a>
             </div>
           </div>
         </div>
       </div>
     </header>
-
+  
     <!-- SIDEBAR -->
-    <div
-      id="sideMenu"
-      class="fixed top-0 right-0 w-64 h-full bg-orange-950 transform translate-x-full transition-transform duration-300 shadow-lg xl:hidden"
-    >
+    <div id="sideMenu"
+      class="fixed top-0 right-0 w-64 h-full bg-orange-950 transform translate-x-full transition-transform duration-300 shadow-lg xl:hidden">
+  
       <div class="flex justify-between items-center p-4 bg-orange-200">
-        <h2 class="text-orange-950 font-bold">Menu</h2>
+        <h2 class="text-orange-950 font-bold">Meniu</h2>
         <button id="closeButton" class="text-orange-950 hover:text-orange-100">
           <i class="bi bi-x-lg"></i>
         </button>
       </div>
-
+  
       <nav class="p-4">
-        <a
-          href="services.html"
-          class="block py-2 text-orange-200 hover:bg-orange-800 rounded-lg font-bold"
-        >
+        <a href="services.html" class="block py-2 text-orange-200 hover:bg-orange-800 rounded-lg font-bold">
           <i class="bi bi-scissors"></i>
-          Services
+          Servicii
         </a>
-        <a
-          href="about.html"
-          class="block py-2 text-orange-200 hover:bg-orange-800 rounded-lg font-bold"
-        >
+        <a href="about.html" class="block py-2 text-orange-200 hover:bg-orange-800 rounded-lg font-bold">
           <i class="bi bi-ticket-detailed-fill"></i>
-          About Us
+          Despre noi
         </a>
-        <a
-          href="gallery.html"
-          class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg"
-        >
-          Gallery
+        <a href="gallery.html" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg">
+          Galerie
         </a>
-        <a
-          href="reviews.html"
-          class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg"
-        >
-          Reviews
+        <a href="reviews.html" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg">
+          Recenzii
         </a>
-        <a
-          href="contact.html"
-          class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg"
-        >
-          Contact Us
+        <a href="contact.html" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg">
+          Contacteaza-ne
         </a>
-
-        <a
-          href="account.html"
-          class="block py-2 text-orange-200 hover:bg-orange-800 rounded-lg font-bold"
-        >
+  
+        <a href="account.html" class="block py-2 text-orange-200 hover:bg-orange-800 rounded-lg font-bold">
           <i class="bi bi-person-circle"></i>
-          Account Details
+          Detalii cont
         </a>
-        <a
-          href="log.html"
-          class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg"
-        >
-          Log In
+        <a href="log.html" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg">
+          Conecteaza-te
         </a>
-        <a
-          href="sign.html"
-          class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg"
-        >
-          Sign Up
+        <a href="sign.html" class="block py-2 px-4 text-orange-200 hover:bg-orange-800 rounded-lg">
+          Inscrie-te
         </a>
       </nav>
     </div>
@@ -187,7 +121,7 @@
     <main
       class="flex-grow flex flex-col items-center justify-center min-h-screen space-y-8 bg-orange-200"
     >
-      <h1 class="text-4xl font-bold">Log In</h1>
+      <h1 class="text-4xl font-bold">Conecteaza-te</h1>
 
       <form class="w-96 space-y-4">
         <div>
@@ -196,7 +130,7 @@
         </div>
 
         <div>
-          <label for="password" class="block">Password</label>
+          <label for="password" class="block">Parola</label>
           <input
             type="password"
             id="password"
@@ -208,13 +142,13 @@
           type="submit"
           class="w-full bg-orange-950 text-orange-200 py-2 rounded-lg"
         >
-          Log In
+          Conecteaza-te
         </button>
       </form>
 
       <p>
-        Don't have an account?
-        <a href="sign.html" class="text-orange-950 font-bold">Sign Up</a>
+        Nu ai un cont?
+        <a href="sign.html" class="text-orange-950 font-bold">Inscrie-te</a>
       </p>
     </main>
 
